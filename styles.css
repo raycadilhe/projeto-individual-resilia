@@ -1,0 +1,82 @@
+    * {
+        color:rgb(0, 0, 0);
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    a {
+    color:white;
+    } 
+
+    a:hover {
+        background-color:rgb(0, 0, 0);
+        color:white;
+    }
+
+    .linha-horizontal {
+        width: 100vw;
+        border: 1px solid;
+        opacity:0.7;
+      }
+
+
+    img {
+        opacity: 0.9;
+        display: block;
+        float:left;
+        width:15%;
+        border-radius:130px;
+        border-style:solid;
+        border-color:rgb(88, 88, 88);
+    }
+
+    img:hover {
+    filter: grayscale();
+
+    }
+    header {
+        background-color:black;
+        height: 17vw;
+        color:rgb(176, 175, 175);
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size:15px;
+    }
+    
+    header h1 {
+        display:inline-block; 
+        margin-top:60px;
+        font-family: 'Sacramento', cursive;
+        float:right;
+        font-size:40px;
+        color:rgb(181, 180, 180);
+    }
+
+    header h1:hover {
+        color:white;
+    }
+
+
+    header h2 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size:20px;
+        display:inline-block; 
+        margin-left: 50vw;
+        margin-top:70px;
+        opacity:0.6; 
+        color:rgb(181, 180, 180);
+        text-align:right;
+    }
+   
+
+    nav {
+        text-align: right;
+        color:rgb(253, 253, 253);
+        background-color:rgb(133, 132, 134);
+        width: 100vw;
+        height: 20px;
+        float: right;
+        }
+
+    body{
+        background-color:rgb(202, 202, 202);
+    }
