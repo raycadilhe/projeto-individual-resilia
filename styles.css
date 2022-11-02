@@ -1,82 +1,98 @@
-    * {
-        color:rgb(0, 0, 0);
-        font-family: 'Roboto', sans-serif;
-
-    }
-
-    a {
-    color:white;
-    } 
-
-    a:hover {
-        background-color:rgb(0, 0, 0);
-        color:white;
-    }
-
-    .linha-horizontal {
-        width: 100vw;
-        border: 1px solid;
-        opacity:0.7;
-      }
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Sacramento&family=Source+Sans+Pro:wght@300&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
-    img {
-        opacity: 0.9;
-        display: block;
-        float:left;
-        width:15%;
-        border-radius:130px;
-        border-style:solid;
-        border-color:rgb(88, 88, 88);
-    }
+/*estilização de toda a página*/
+* {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
 
-    img:hover {
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+/*estilização dos links*/
+a {
+    color: white;
+}
+
+a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+/*linha que separa as seções*/
+.linha-horizontal {
+    width: 100vw;
+    border: 1px solid;
+    opacity: 0.7;
+    color: rgb(116, 50, 50);
+}
+
+/*estilização da foto*/
+img {
+    opacity: 0.9;
+    display: block;
+    float: right;
+    max-width: 15%;
+    border-radius: 130px;
+    border-style: solid;
+    border-color: rgb(88, 88, 88);
+}
+
+img:hover {
     filter: grayscale();
+}
 
-    }
-    header {
-        background-color:black;
-        height: 17vw;
-        color:rgb(176, 175, 175);
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size:15px;
-    }
-    
-    header h1 {
-        display:inline-block; 
-        margin-top:60px;
-        font-family: 'Sacramento', cursive;
-        float:right;
-        font-size:40px;
-        color:rgb(181, 180, 180);
+/*estilização do header*/
+header {
+    background-color: black;
+    height: 17vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+}
+
+header h1 {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 2%;
+    font-family: 'Berkshire Swash', cursive;
+    float: left;
+    font-size: 40px;
+    color: white;
+}
+
+header h1:hover {
+    color: rgb(130, 74, 74);
+}
+
+nav {
+    text-align: right;
+    background-color: rgb(66, 23, 23);
+    width: 100vw;
+    height: 1.5vw;
+    float: right;
+}
+
+/*estilização dos títulos h1*/
+h1 {
+    font-size: 18px;
+    color: rgb(116, 50, 50);
+}
+
+
+/*deixando o header responsivo*/
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 
-    header h1:hover {
-        color:white;
+    .header-right {
+        float: none;
     }
-
-
-    header h2 {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size:20px;
-        display:inline-block; 
-        margin-left: 50vw;
-        margin-top:70px;
-        opacity:0.6; 
-        color:rgb(181, 180, 180);
-        text-align:right;
-    }
-   
-
-    nav {
-        text-align: right;
-        color:rgb(253, 253, 253);
-        background-color:rgb(133, 132, 134);
-        width: 100vw;
-        height: 20px;
-        float: right;
-        }
-
-    body{
-        background-color:rgb(202, 202, 202);
-    }
+}
